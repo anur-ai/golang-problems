@@ -5,14 +5,9 @@ import (
 	"math"
 )
 
-func main() {
-	var a, s, v float64
-
-	fmt.Println("Enter a")
-	fmt.Scanln(&a)
-
-	s = 6 * math.Pow(a, 2)
-	v = math.Pow(a, 3)
-
-	fmt.Print("S=", s, " V=", v)
+func main(){
+	var a float64
+	fmt.Scan(&a)
+	fmt.Println("V = ", math.Pow(a, 3))
+	fmt.Println("S = ", 6 * math.Pow(a, 2))
 }
