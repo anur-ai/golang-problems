@@ -5,11 +5,10 @@ import (
 	"math"
 )
 
-func main() {
+func main(){
 	var a, b float64
-
-	fmt.Println("Enter a, b")
-	fmt.Scanln(&a, &b)
-
-	fmt.Println(a + b, a - b, a * b, math.Pow(a, 2), math.Pow(b, 2))
-}
+	fmt.Scan(&a, &b)
+	if a > 0 && b > 0{
+		fmt.Println(math.Pow(a, 2) - math.Pow(b, 2), math.Pow(a, 2) + math.Pow(b, 2), math.Pow(a, 2) * math.Pow(b, 2), math.Pow(a, 2) / math.Pow(b, 2))
+	}
+} 
