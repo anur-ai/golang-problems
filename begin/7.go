@@ -2,16 +2,15 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
-func main() {
-	var l, s, r float64
-
-	fmt.Println("Enter R")
-	fmt.Scanln(&r)
-
-	l = 2 * 3.14 * r
-	s = 3.14 * r * r
-
-	fmt.Print("L=", l, " S=", s)
+func main(){
+	var R float64
+	P := 3.14
+	fmt.Scan(&R)
+	L := 2 * P * R
+	S := P * math.Pow(R, 2)
+	fmt.Println("L = ", L)
+	fmt.Println("S = ", S)
 }
