@@ -1,14 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func main() {
-	var d float32
-
-	fmt.Println("Enter d")
-	fmt.Scanln(&d)
-
-	fmt.Println(3.14 * d)
+func main(){
+	var d float64
+	fmt.Scan(&d)
+	fmt.Println("L = ", 3.14 * d)
 }
