@@ -5,10 +5,8 @@ import (
 	"math"
 )
 
-func main() {
+func main(){
 	var a float64
-
-	fmt.Println("Enter a:")
-	fmt.Scanln(&a)
+	fmt.Scan(&a)
 	fmt.Println(math.Pow(a, 2))
 }
