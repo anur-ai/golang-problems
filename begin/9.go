@@ -5,13 +5,10 @@ import (
 	"math"
 )
 
-func main() {
+func main(){
 	var a, b float64
-
-	fmt.Println("Enter a, b")
-	fmt.Scanln(&a, &b)
-
-	s := math.Sqrt(a * b)
-
-	fmt.Println(s)
+	fmt.Scan(&a, &b)
+	if a > 0 && b > 0 {
+		fmt.Println(math.Sqrt(a * b))
+	}
 }
