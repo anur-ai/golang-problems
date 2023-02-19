@@ -1,14 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func main() {
+func main(){
 	var a, b int
-	fmt.Println("Enter a and b")
-	fmt.Scanln(&a, &b)
-
-	fmt.Println(a * b)
-	fmt.Println((a + b) * 2)
+	fmt.Scan(&a, &b)
+	fmt.Println("P = ", (a + b) * 2)
+	fmt.Println("S = ", a * b)
 }
