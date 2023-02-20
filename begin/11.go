@@ -2,22 +2,15 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
-func module(int1 float64) float64 {
-	var result float64
-	if (int1 > 0) {
-		result = int1
-	} else {
-		result = int1 * (-1)
-	}
-	return result
-}
-
-func main() {
+func main()  {
 	var a, b float64
-
-	fmt.Println("Enter a, b")
-	fmt.Scanln(&a, &b)
-	fmt.Println(a + b, a - b, a * b,module(a), module(b))
+	fmt.Scan(&a, &b)
+	if a > 0 && b > 0{
+		abs_a := math.Abs(a)
+		abs_b := math.Abs(b)
+		fmt.Println(abs_a + abs_b, abs_a - abs_b, abs_a * abs_b, abs_a / abs_b)
+	}
 }
