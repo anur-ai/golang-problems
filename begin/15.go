@@ -5,15 +5,12 @@ import (
 	"math"
 )
 
-func main() {
-	var s, r float64
+func main(){
 	p := 3.14
-
-	fmt.Print("Enter L: ")
-	fmt.Scanln(&s)
-
-	r = math.Sqrt(s / p)
-	l := r * 2 * p
-
-	fmt.Print("D=", float32(r * 2), " L=", float32(l))
+	var S float64
+	fmt.Scan(&S)
+	R := math.Sqrt(S * p)
+	L := 2 * p *R
+	D := 2 * R
+	fmt.Println("D = ", D, "L = ", L)
 }
